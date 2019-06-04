@@ -12,14 +12,14 @@ export class Axes {
     // TODO: Declare a constructor with width and height parameters
 
     getShapes(): Group {
-
-        let yAxis = new Line(0, -this.height / 2, 0, this.height / 2);
-
-        // TODO: Add an xAxis Line
-        
         let g = new Group();
+
+        // Create a y-axis line and add it to the group
+        let yAxis = new Line(0, -this.height/2, 0, this.height/2);
         g.add(yAxis);
-        // TODO: Add the xAxis to the group
+
+        // TODO: Create an x-axis line and add it to the group
+
         return g;
     }
 }
